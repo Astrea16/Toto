@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity= "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"  crossorigin= "anonymous">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/style.css">
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -16,6 +17,7 @@
 	<title>Toto</title>
 </head>
 <body>
+<!--Верстка сырая-->
 	<header>
 		<div class="container-fluid">
 			<div class="row">
@@ -23,11 +25,10 @@
 					<img src="img/logo.png" alt="logo">
 				</div>
 				<div class="col-md-7 col-sm-7 col-xs-12">
-					<form class="form-inline">
-						
+					<form method="post" action="" class="form-inline">
 						<div class="col-md-5 col-sm-6">
 							<div class="form-group">
-								<input type="text" class="form-control input-sm" id="text" placeholder="Поиск">
+								<input type="search" class="form-control input-sm" id="text" placeholder="Поиск">
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-3">
@@ -37,12 +38,11 @@
 							</select>
 						</div>
 						<div class="col-md-2 col-sm-2">
-
-							<select class="form-control input-sm language">
-
-								<option>Русский</option>
-								<option>English</option>
+							<select class="form-control input-sm" id="language">
+								<option data-path="img/rashen.png" value="rashen">Русский</option>
+								<option data-path="img/England.png" value="english">English</option>
 							</select>
+							<div id="languageimg"><img src="img/rashen.png" alt=""></div>
 						</div>
 						<div class="col-md-1 col-sm-1"></div>	
 						
@@ -86,35 +86,32 @@
 					<div class="row">
 						<div class="col-md-2 col-sm-2 col-xs-12 rates">
 							<div class="top-span"><img src="img/mon.png" alt="mon" class="img1">
-								<span>Ставки LIVE</span><span><img src="img/circle.png" alt="circle" class="img2"><a href="#">35</a></span>
+								<span>Ставки LIVE</span><span><img src="img/circle.png" alt="circle" class="img2 hidden-sm hidden-xs"><a href="#">35</a></span>
 							</div>
-
-							<div class="bottom-span">
-								<img src="img/line.png" alt="line" class="img3">
-								<img src="img/star.png" alt="star" class="img4">
-								<span>Ставки - Линия</span>
-							</div>
-							<div class="list1">
+						<div class="list1">
 								<ul class="list-unstyled">
-									<li><img src="img/icon2.png" alt="icon">Баскетбол</li>
-									<li><img src="img/icon3.png" alt="icon" class="icon3">Вoлейбол</li>
-									<li><img src="img/icon4.png" alt="icon" class="icon4">Гандбол</li>
-									<li><img src="img/icon5.png" alt="icon" class="icon5">Теннис</li>
-									<li><img src="img/icon6.png" alt="icon">Футбол</li>
-									<li><img src="img/icon7.png" alt="icon">Хоккей</li>
-									<li><img src="img/icon8.png" alt="icon">Остальные</li>
+								<a href=""><li><img src="img/star.png" alt="star" class="img4">
+								<span>Ставки - Линия</span></li></a>
+								
+									<a href=""><li class="second"><img src="img/icon2.png" alt="icon" class="icon2">Баскетбол</li></a>	
+									<a href=""><li class="second"><img src="img/icon3.png" alt="icon" class="icon3">Вoлейбол</li></a>
+									<a href=""><li class="second"><img src="img/icon4.png" alt="icon" class="icon4">Гандбол</li></a>
+									<a href=""><li class="second"><img src="img/icon5.png" alt="icon" class="icon5">Теннис</li></a>
+									<a href=""><li class="second"><img src="img/icon6.png" alt="icon" class="icon6">Футбол</li></a>
+									<a href=""><li class="second"><img src="img/icon7.png" alt="icon" class="icon7">Хоккей</li></a>
+									<a href=""><li class="second"><img src="img/icon8.png" alt="icon" class="icon8">Остальные</li></a>
 								</ul>
 							</div>
 							<div class="list2">
-								<ul class="list-group list-unstyled">
+								<ul class="list-group list-unstyled">                                                                                                                               
 									<a href="" class="list-group-item"><li><img src="img/icon9.png" alt="icon">Результаты</li></a>
-									<a href="" class="list-group-item"><li><img src="img/icon10.png" alt="icon">Текущие результаты</li></a>
+									<a href="" class="list-group-item"><li><img src="img/icon10.png" alt="icon" class="icon10">Текущие результаты</li></a>
 									<a href="" class="list-group-item"><li><img src="img/icon11.png" alt="icon" class="icon11">Спортивная статистика</li></a>
-									<a href="" class="list-group-item"><li><img src="img/icon12.png" alt="icon">Контакты</li></a>
-									<a href="" class="list-group-item"><li><img src="img/icon13.png" alt="icon">Правила</li></a>
+									<a href="" class="list-group-item"><li><img src="img/icon12.png" alt="icon" class="icon12">Контакты</li></a>
+									<a href="" class="list-group-item"><li><img src="img/icon13.png" alt="icon" class="icon13">Правила</li></a>
 								</ul>
 							</div>
-							<a href="#" class="btn btn-success" role="button"><img src="img/icon14.png" alt="icon">Служба поддержки</a>	
+							<a href="#" class="btn btn-success" role="button"><img src="img/icon14.png" alt="icon" hidden-sm hidden-xs>Служба поддержки</a>	
 						</div>
 
 						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 col-center">
@@ -151,15 +148,13 @@
 										</label></div></li>
 										<li><div class="checkbox"><input type="checkbox" id="check2" name="check" value="check2"><label for="check2">
 											14:00 &nbsp;&nbsp;&nbsp;  Болтон Уондерерс - Манчестер Юнайтед 
-										</label></li>
+										</label></div></li>
 										<li><div class="checkbox"><input type="checkbox" id="check3" name="check" value="check3"><label for="check3">
 											14:00 &nbsp;&nbsp;&nbsp;  Болтон Уондерерс - Манчестер Юнайтед 
 										</label></div></li>
 									</ul>
 								</div>
 							</div>
-
-							
 							<div><hr class="hr1"></div>	
 							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -193,7 +188,7 @@
 							</div>
 							<div class="row">
 								<div class="col-lg-2 col-md-2"></div>
-								<div class="col-lg-18 col-md-8 col-sm-12 cards">
+								<div class="col-lg-8 col-md-8 col-sm-12 cards">
 									<a href="#"><img src="img/maestro.png" alt="maestro"></a>
 									<a href="#"><img src="img/visa.png" alt="visa"></a>
 									<a href="#"><img src="img/PayPal.png" alt="PayPal"></a>
@@ -216,42 +211,50 @@
 							</div>
 						</div>
 					
-						<div class="col-lg-3 col-md-3 col-sm-3">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-right">
 							<h3 class="text-center">САМОЕ ИНТЕРЕСНОЕ ЗА 24 ЧАСА</h3>
 							<div class="news1">
-								<p>	Футбол  &#62; Россия &#62;  Премьерлига</p>	
+								<p class="upper">	Футбол  &#62; Россия &#62;  Премьерлига</p>	
 								
-								<img src="img/icon17.png" alt="icon" class="new">
-								<h3>Загадка для «Локомотива» и  ещё 6 интриг матчей Лиги Европы</h3>	
-								<p>	Албанский «Скендербеу» едет в  Черкизово в статусе главной загадки Лиги Европы. Из игроков, выступающих за &#171;снежных волков&#187;, в узком кругу известен лишь нападающий Хамид Салихи</p>
-								<p>	30.09.2015      12:30  <span>	<a href="	#">подробнее</a></span></p>
+								<img src="img/icon17.png" alt="icon" class="new hidden-sm hidden-xs">
+								<div class="news">
+								<h3>Загадка для «Локомотива» и <br>  ещё 6 интриг матчей Лиги Европы</h3>	
+								<p>	Албанский «Скендербеу» едет в <br> Черкизово в статусе главной загадки<br> Лиги Европы. Из игроков, выступающих за <br>&#171;снежных волков&#187;, в узком кругу известен <br>  лишь нападающий Хамид Салихи</p>
+								<p class="lower">	30.09.2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>	<a href="	#">подробнее</a></span></p>
+								</div>
 							</div>
 							<div>	<hr>	</div>	
 							<div class="news1">
-								<p>	Футбол  &#62; Россия &#62;  Премьерлига</p>	
+								<p class="uppert">	Футбол  &#62; Россия &#62;  Премьерлига</p>	
 								
-								<img src="img/icon17.png" alt="icon" class="new">
-								<h3>Невероятная пятка Маты и ещё 6  лучших голов 2-го тура ЛЧ</h3>	
-								<p>	Представляем семёрку лучших голов 2-го тура группового этапа Лиги чемпионов с суперударом Фегули и восхитительным пасом Маты.</p>
-								<p>	30.09.2015      12:30  <span>	<a href="	#">подробнее</a></span></p>
+								<img src="img/icon17.png" alt="icon" class="new hidden-sm hidden-xs">
+								<div class="news">
+								<h3>Невероятная пятка Маты и ещё 6 <br> лучших голов 2-го тура ЛЧ</h3>	
+								<p>	Представляем семёрку лучших голов 2-го <br> тура группового этапа Лиги чемпионов<br> с суперударом Фегули и восхитительным<br> пасом Маты.</p>
+								<p class="lower">	30.09.2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>	<a href="	#">подробнее</a></span></p>
+								</div>
 							</div>
 							<div>	<hr>	</div>
 							<div class="news1">
-								<p>	Футбол  &#62; Россия &#62;  Премьерлига</p>	
+								<p class="uppert">	Футбол  &#62; Россия &#62;  Премьерлига</p>	
 								
-								<img src="img/icon17.png" alt="icon" class="new">
-								<h3>«Витязь» реабилитировался,  Уфа снова проиграла</h3>	
-								<p>Яркий матч ЦСКА и ПСВ «Эйндховен»  в Химках — глазами главных тренеров команд, Леонида Слуцкого и Филипа Коку</p>
-								<p>	30.09.2015      12:30  <span>	<a href="	#">подробнее</a></span></p>
+								<img src="img/icon17.png" alt="icon" class="new hidden-sm hidden-xs">
+								<div class="news">
+								<h3>«Витязь» реабилитировался,<br>  Уфа снова проиграла</h3>	
+								<p>Яркий матч ЦСКА и ПСВ «Эйндховен» <br> в Химках — глазами главных тренеров <br>команд, Леонида Слуцкого и Филипа Коку</p>
+								<p class="lower">	30.09.2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>	<a href="	#">подробнее</a></span></p>
+								</div>
 							</div>
 							<div>	<hr>	</div>
 							<div class="news1">
-								<p>	Футбол  &#62; Россия &#62;  Премьерлига</p>	
+								<p class="uppert">	Футбол  &#62; Россия &#62;  Премьерлига</p>	
 								
-								<img src="img/icon17.png" alt="icon" class="new">
-								<h3>ЦСКА чуть не упустил победу  над ПСВ</h3>	
-								<p>ЦСКА выдал очередной футбольный  триллер – на сей раз в соавторстве с ПСП.Забив три мяча до перерыва</p>
-								<p>	30.09.2015      12:30  <span>	<a href="	#">подробнее</a></span></p>
+								<img src="img/icon17.png" alt="icon" class="new hidden-sm hidden-xs">
+								<div class="news">
+								<h3>ЦСКА чуть не упустил победу<br>  над ПСВ</h3>	
+								<p>ЦСКА выдал очередной футбольный <br> триллер – на сей раз в соавторстве с ПСП.<br>Забив три мяча до перерыва</p>
+								<p class="lower">	30.09.2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12:30  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>	<a href="	#">подробнее</a></span></p>
+								</div>
 							</div>
 							<div>	<hr>	</div>							
 						</div>
@@ -262,7 +265,7 @@
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-lg-3 col-md-3 col-sm-12">
-								<p>	© 2010-2015  | TOTO  Все права защищены </p> 	
+								<p class="toto">	© 2010-2015&nbsp;&nbsp;| <span>TOTO</span>&nbsp;&nbsp;Все права защищены </p> 	
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<nav  class="navbar navbar-default">
@@ -277,20 +280,20 @@
 									<div id="navbarCollapse" class="collapse navbar-collapse">
 										<ul class="nav navbar-nav">
 											<li><a href="#">Главная</a></li>
-											<li><img src="img/footer.png" alt=""></li>
+											<li><img src="img/footer1.png" alt="" class="hidden-sm hidden-xs"></li>
 											<li><a href="#">Линия</a></li>
-											<li><img src="img/footer.png" alt=""></li>
+											<li><img src="img/footer1.png" alt="" class="hidden-sm hidden-xs"></li>
 											<li><a href="#">Результаты</a></li>
-											<li><img src="img/footer.png" alt=""></li>
+											<li><img src="img/footer1.png" alt="" class="hidden-sm hidden-xs"></li>
 											<li><a href="#">О компании</a></li>
-											<li><img src="img/footer.png" alt=""></li>
+											<li><img src="img/footer1.png" alt="" class="hidden-sm hidden-xs"></li>
 											<li><a href="#">Контакты</a></li>
 										</ul>
 									</div>
 								</nav>
 							</div>
 							<div class="col-lg-3 col-md-3 col-sm-12">
-								Добавляйтесь к нам - <a href="#"><img src="img/icon-vk.png" alt=""></a><a href="#"><img src="img/icon-tw.png" alt="icon"></a>
+								<p class="social">Добавляйтесь к нам - <a href="#"><img src="img/icon-vk.png" alt=""></a><a href="#"><img src="img/icon-tw.png" alt="icon"></a></p>
 							</div>
 						</div>
 						</div>
@@ -300,5 +303,6 @@
 			
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			<script src="js/option.js" type="text/javascript"></script>
 		</body>
 		</html>
